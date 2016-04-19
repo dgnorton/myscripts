@@ -42,6 +42,9 @@ goGetVimGoDeps() {
 
 goGetUtilDeps() {
 	set -x
+	go get github.com/gogo/protobuf/proto
+	go get github.com/gogo/protobuf/protoc-gen-gogo
+	go get github.com/gogo/protobuf/gogoproto
 	go get -u github.com/davecgh/go-spew/spew
 	set +x
 }
